@@ -1,0 +1,13 @@
+nome = input("Nome do paciente: ")
+idade = int(input("Idade do paciente: "))
+risco = input("O paciente possui alguma doença de risco: ").upper()
+if idade<15 or idade>60:
+    print("O paciente deve ser encaminhado ao centro hospitalar.")
+if risco !="SIM" and risco !="NAO":
+    risco = input("A resposta da pergunta anterior se resume a sim ou nao: ").upper()
+if risco == "SIM":
+    print("O paciente tem atendimento prioritário.")
+if idade <15 or idade>60 and risco == "SIM":
+    print("O paciente deve ser encaminhado ao centro hospitalar com prioridade.")
+else:
+    print("O paciente deverá seguir a fila normalmente.")
