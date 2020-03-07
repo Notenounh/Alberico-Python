@@ -2,22 +2,25 @@
 #Alberico melhor professor =D
 
 niv_acesso = input("Insira suas credências de acesso: ").upper()
+nome = input("Nome de usuario: ")
 sexo = input("Insira seu sexo: ").upper()
 if niv_acesso !="ADM" and niv_acesso !="USR" and niv_acesso!="GUEST" and niv_acesso!=(""):
     print("Os niveis de acesso são: ADM, USR, GUEST")
-if niv_acesso == "ADM" and sexo == "MASCULINO":
-    print("Olá administrador!")
-if niv_acesso == "ADM" and sexo == "FEMININO":
-    print("Olá administradora!")
-if niv_acesso == "USR" and sexo == "MASCULINO":
-    print("Olá usuário!")
-if niv_acesso == "USR" and sexo == "FEMININO":
-    print("Olá usuaria!")
-if niv_acesso == "GUEST" and sexo == "MASCULINO":
-    print("Olá visitante!")
-if niv_acesso == "GUEST" and sexo == ("FEMININO"):
-    print("Olá visitante(a)!")
-if niv_acesso == (""):
+if sexo !="MASCULINO" and sexo!="FEMININO":
+    print("Os sexos possiveis são: Masculino/Feminino")
+elif niv_acesso == "ADM" and sexo == "MASCULINO":
+    print("Olá administrador!"+nome)
+elif niv_acesso == "ADM" and sexo == "FEMININO":
+    print("Olá administradora!" +nome)
+elif niv_acesso == "USR" and sexo == "MASCULINO":
+    print("Olá usuário!" +nome)
+elif niv_acesso == "USR" and sexo == "FEMININO":
+    print("Olá usuaria!" +nome)
+elif niv_acesso == "GUEST" and sexo == "MASCULINO":
+    print("Olá visitante!" +nome)
+elif niv_acesso == "GUEST" and sexo == ("FEMININO"):
+    print("Olá visitante(a)!" +nome)
+elif niv_acesso == (""):
     print ("Olá unkown!")
 else:
     print("Desculpe, não foi possível verificar suas credenciais.")
