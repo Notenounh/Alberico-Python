@@ -1,5 +1,4 @@
 ##Exercício de credenciais
-#Alberico melhor professor =D
 
 niv_acesso = input("Insira suas credências de acesso: ").upper()
 nome = input("Nome de usuario: ")
